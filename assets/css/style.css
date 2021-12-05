@@ -60,7 +60,34 @@ header nav ul li a {
 
 /* end header/nav styles */
 
+/* contact me styling start */
 
+.contact {
+  text-align: center;
+  background-color: var(--tertiary-color);
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: bolder; 
+  margin: 20px 0 20px 0;
+}
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 10px 0 10px 0;
+}
+
+.contact ul li a {
+  padding: 8px;
+  border: 2px solid #0099ff;
+  border-radius: 5px;
+}
+
+/* contact me styling end */
 
 /* footer styling start */
 
@@ -75,6 +102,7 @@ footer img {
   height: auto;
   border-radius: 10px;
   border: 2px solid #bfbfbf;
+  margin-top: 10px;
   align-items: center;
 }
 
