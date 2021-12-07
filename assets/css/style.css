@@ -8,6 +8,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--tertiary-color);
 }
 
 a {
@@ -25,11 +26,13 @@ body {
 
 header {
   display: flex;
-  padding: 40px;
+  padding: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
+  /*
   position: -webkit-sticky;
   position: sticky;
+  */
   top: 0;
   background-color: var(--tertiary-color);
   z-index: 10;
@@ -58,7 +61,21 @@ header nav ul li a {
   border-radius: 5px;
 }
 
-/* end header/nav styles */
+/* header/nav styles end */
+
+/* about-me styles start */
+
+.about-me img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* about-me styles end */
+
+
+
+
 
 /* contact me styling start */
 
