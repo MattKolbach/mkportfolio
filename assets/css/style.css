@@ -28,11 +28,9 @@ header {
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  flex-wrap: wrap;
-  /*
+  flex-wrap: wrap;  
   position: -webkit-sticky;
   position: sticky;
-  */
   top: 0;
   background-color: var(--tertiary-color);
   z-index: 10;
@@ -73,9 +71,23 @@ header nav ul li a {
 
 /* about-me styles end */
 
+/* projects styles start */
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects img {
+  height: 400px;
+  width: auto;
+}
 
 
-
+/* projects styles end */
 
 /* contact me styling start */
 
