@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ff1aff;
-  --secondary-color: #66ff33;
+  --secondary-color: #0099ff;
   --tertiary-color: #b3e0ff;
 }
 
@@ -8,7 +8,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--tertiary-color);
+}
+
+.flex-one {
+  flex: 1;
 }
 
 a {
@@ -20,11 +23,13 @@ body {
   font-family: monospace, Garamond, serif;
   font-size: 20px;
   font-weight: 550;
+  background-color: var(--tertiary-color);
 }
 
 /* start header/nav styles */
 
 header {
+  border-bottom: 2px solid var(--secondary-color);
   display: flex;
   padding: 20px;
   justify-content: space-between;
@@ -46,16 +51,19 @@ header nav {
 }
 
 header nav ul {
+  gap: 10px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
 }
 
+header nav ul li {
+display: block;
+}
+
 header nav ul li a {
-  margin: 0 40px;
   padding: 10px;
-  border: 2px solid #0099ff;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
 }
 
@@ -63,7 +71,37 @@ header nav ul li a {
 
 /* about-me styles start */
 
+.about-me {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.about-me-body {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-me h2 {
+  margin: 10px 20px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.about-me p {
+  margin: 5px;
+  padding-left: 15px;
+  border-left: 3px solid var(--secondary-color);
+}
+
 .about-me img {
+  margin: 5px 10px;
   width: 200px;
   height: auto;
   border-radius: 10px;
@@ -74,18 +112,54 @@ header nav ul li a {
 /* projects styles start */
 
 .projects {
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  margin: 10px;
+  border-right: 3px solid var(--secondary-color)
+}
+
+.projects-header {
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: 225px;
+  align-items: center;
+}
+
+.projects h3 {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder; 
+  margin: 20px;
+  border-right: 3px solid var(--secondary-color);
+  height: 95%;
+  padding-right: 15px;
+}
+
+.projects-body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.projects img {
+.projects-body-article {
+  position: relative;
+  margin: 5px;
+}
+
+.projects-body-article img {
+  object-fit: cover;
   height: 400px;
-  width: auto;
+  width: 100%;
+  border-radius: 5px;
 }
 
+.projects-title {
+position: absolute;
+bottom: 5px;
+left: 5px;
+}
 
 /* projects styles end */
 
@@ -103,6 +177,7 @@ header nav ul li a {
 }
 
 .contact ul {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -112,8 +187,17 @@ header nav ul li a {
 
 .contact ul li a {
   padding: 8px;
-  border: 2px solid #0099ff;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
+}
+
+.linkedin-link {
+display: block;
+width: 200px;
+}
+
+.linkedin-image {
+width: 100%;
 }
 
 /* contact me styling end */
@@ -138,3 +222,22 @@ footer img {
 
 /* footer styling end */
 
+/* media query start */
+
+@media screen and (max-width: 979px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .projects-header {
+    flex-basis: 100px;
+  }
+
+  .projects h3 {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 15px;
+  }
+
+}

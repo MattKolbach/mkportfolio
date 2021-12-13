@@ -12,7 +12,7 @@
   <!-- header start -->
   <header>
     <h1>
-      <a href="/">Matt Kolbach</a>
+      <a href="./index.html">Matt Kolbach</a>
     </h1>
     <nav>
       <ul>
@@ -32,35 +32,73 @@
 
   <!-- about me start -->
   <section id="about-me" class="about-me">
-    <h2>About Me</h2>
-    <img src="assets/images/mkselfie.jpg" alt="a selfie of me in a blue suit at a wedding">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, voluptas. Soluta doloribus at, deleniti
-      corporis sed exercitationem nesciunt nobis, delectus quia voluptatum eius ipsa. Libero culpa tenetur tempore velit
-      dicta similique sunt quisquam optio vitae cum incidunt aliquid ipsum enim, iusto eum totam autem repudiandae
-      voluptatibus eos veritatis natus sed accusantium, eveniet possimus! A nemo necessitatibus quod? Nulla similique
-      molestiae magni? Veniam, sunt aliquid nemo rem quaerat facere pariatur minima consectetur beatae earum vero,
-      accusantium minuequatur provident corrupti. Itaque debitis dolor quisquam sed
-      necessitatibus minus deleniti id voluptatem magni optio excepturi maiores aliquid odit impedit est, similique
-      temporibus fugit iusto ipsum quidem, iste animi asperiores maxime quos
-      provident unde sed similique architecto tenetur a quaerat dolore. Velit cupiditate esse quasi.
-    </p>
-
+    <div>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-me-body">
+      <article>
+        <img src="assets/images/mkselfie.jpg" alt="a selfie of me in a blue suit at a wedding">
+      </article>
+      <article class="flex-one">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, voluptas. Soluta doloribus at, deleniti
+          corporis sed exercitationem nesciunt nobis, delectus quia voluptatum eius ipsa. Libero culpa tenetur tempore
+          velit dicta similique sunt quisquam optio vitae cum incidunt aliquid ipsum enim, iusto eum totam autem
+          repudiandae
+          voluptatibus eos veritatis natus sed accusantium, eveniet possimus! A nemo necessitatibus quod? Nulla
+          similique
+          molestiae magni? Veniam, sunt aliquid nemo rem quaerat facere pariatur minima consectetur beatae earum vero,
+          accusantium minuequatur provident corrupti. Itaque debitis dolor quisquam sed
+          necessitatibus minus deleniti id voluptatem magni optio excepturi maiores aliquid odit impedit est,
+          similique
+          temporibus fugit iusto ipsum quidem, iste animi asperiores maxime quos
+          provident unde sed similique architecto tenetur a quaerat dolore. Velit cupiditate esse quasi.
+        </p>
+      </article>
+    </div>
+    </div>
   </section>
   <!-- about me end -->
 
   <!-- Projects start-->
   <section id="projects" class="projects">
-    <div>
+    <div class="projects-header">
       <h3>Projects</h3>
-      <article class="projects">
-        <img src="./assets/images/runbuddy.jpg" alt="a woman in running gear bending down to tie her shoe">
-        <div>
+    </div>
+
+    <div class="projects-body">
+      <article class="projects-body-article">
+        <a href="https://mattkolbach.github.io/run-buddy/" target="_blank">
+          <img src="./assets/images/runbuddy.jpg" alt="a woman in running gear bending down to tie her shoe"
+            target="_blank"></a>
+        <div class="projects-title">
           <h4><a href="https://mattkolbach.github.io/run-buddy/" target="_blank">Run Buddy</a></h4>
+          <p>
+            HTML, CSS
+          </p>
+        </div>
+      </article>
+
+      <article class="projects-body-article">
+        <img src="./assets/images/NMS_Cube.jpg" alt="a cube from the video game No Man's Sky" target="_blank">
+        <div class="projects-title">
+          <h4>Place Holder 1</h4>
+          <p>
+            HTML, CSS
+          </p>
+        </div>
+      </article>
+
+      <article class="projects-body-article">
+        <img src="./assets/images/Crystal.jpg" alt="a 3D printed cluster of crystals" target="_blank">
+        <div class="projects-title">
+          <h4>Place Holder 2</h4>
+          <p>
+            HTML, CSS
+          </p>
         </div>
       </article>
     </div>
-
   </section>
   <!-- Projects end-->
 
@@ -75,8 +113,9 @@
             <a href="mailto:mattkolbach@yahoo.com">MattKolbach@yahoo.com</a>
           </li>
           <li>
-            LinkedIn:
-            <a href="http://www.linkedin.com/in/matthew-kolbach-b009b417" target="_blank">Matt Kolbach</a>
+            <a class="linkedin-link" href="http://www.linkedin.com/in/matthew-kolbach-b009b417" target="_blank">
+              <img class="linkedin-image" src="./assets/images/linkedin.png">
+            </a>
           </li>
         </ul>
       </address>
