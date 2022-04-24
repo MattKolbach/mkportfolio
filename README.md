@@ -1,4 +1,4 @@
-# Matt Kolbach's full stack portfolio page
+# Matt Kolbach's portfolio page
 
 ## Overview
 
